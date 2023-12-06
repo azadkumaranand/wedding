@@ -1,0 +1,72 @@
+.container{
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+}
+.logo{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+}
+.nav_links{
+    /* background-color: blue; */
+}
+
+.navbar{
+    display: flex;
+    /* flex-direction: column-reverse;
+    flex-direction: column; */
+    flex-direction: row;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    height: 90px;
+}
+.nav_links{
+    /* list-style: circle; */
+    /* list-style: square; */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav_links li{
+    /* background-color: white; */
+    padding-left: 20px;
+    color: gray;
+}
+.nav_links li:hover{
+    color: brown;
+}
+.nav_links a{
+    /* text-decoration: none; */
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+    /* text-decoration: wavy; */
+    text-decoration: none;
+}
+.menu{
+    display: none;
+}
+
+.header-banner{
+    background: url('https://www.tooplate.com/templates/2131_wedding_lite/images/couple-hugging-laughing-near-wall.png');
+    height: 80vh;
+    background-color: #d9d8d6;
+    border-radius: 10px;
+    background-size: cover;
+    /* background-position: -150px 200px; */
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 1050px){
+    .nav_links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
