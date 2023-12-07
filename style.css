@@ -1,8 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .container{
-    width: 90%;
+    width: 86%;
     /* background-color: red; */
     margin: auto;
+    box-sizing: border-box;
 }
+
 .logo{
     /* background-color: green; */
     display: flex;
@@ -22,14 +30,12 @@
     flex-direction: row;
     /* justify-content: space-around; */
     justify-content: space-between;
-    height: 90px;
+    height: 70px;
 }
 .nav_links{
     /* list-style: circle; */
     /* list-style: square; */
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     align-items: center;
 }
@@ -54,12 +60,84 @@
 
 .header-banner{
     background: url('https://www.tooplate.com/templates/2131_wedding_lite/images/couple-hugging-laughing-near-wall.png');
-    height: 80vh;
+    height: 75vh;
     background-color: #d9d8d6;
     border-radius: 10px;
     background-size: cover;
     /* background-position: -150px 200px; */
     background-repeat: no-repeat;
+    padding: 0px 50px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    position: relative;
+}
+.left-cotnainer{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    height: 75vh;
+}
+.header-left-content p:nth-child(1){
+    font-size: 40px;
+    color: #cb7575;
+}
+.header-left-content p:nth-child(2){
+    font-size: 50px;
+    color: white;
+    line-height: 100px;
+}
+.header-left-content p:nth-child(3), p:nth-child(4){
+    font-size: 23px;
+    color: white;
+    line-height: 45px;
+}
+
+.header-right-content{
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+}
+
+.header-right-content div:nth-child(1){
+    background-color: #ff5500;
+    text-align: right;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.header-right-content div:nth-child(2){
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.heading-style-container p:nth-child(2){
+    font-size: 50px;
+    color: red;
+}
+
+.heading-style-container p:nth-child(1), .heading-style-container p:nth-child(3){
+    background-color: gray;
+    height: 1px;
+    width: 30px;
+}
+.heading{
+    font-size: 40px;
+    color: #f1c522;
+    text-align: center;
+    line-height: 80px;
+}
+
+.heading-style-container{
+    display: flex;
+    justify-content: center;
 }
 
 @media(max-width: 1050px){
