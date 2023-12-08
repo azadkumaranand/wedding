@@ -31,6 +31,11 @@
     /* justify-content: space-around; */
     justify-content: space-between;
     height: 70px;
+    position: fixed;
+    /* background-color: blue; */
+    width: 86%;
+    top: 0;
+    z-index: 9999;
 }
 .nav_links{
     /* list-style: circle; */
@@ -70,6 +75,8 @@
     /* overflow: hidden; */
     /* overflow: scroll; */
     position: relative;
+    margin-top: 70px;
+    /* top: 70px; */
 }
 .left-cotnainer{
     width: 45%;
@@ -121,6 +128,7 @@
 .heading-style-container p:nth-child(2){
     font-size: 50px;
     color: red;
+    margin: 0 10px;
 }
 
 .heading-style-container p:nth-child(1), .heading-style-container p:nth-child(3){
@@ -138,6 +146,52 @@
 .heading-style-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 50%;
+    display: flex;
+}
+
+.card-img{
+    width: 50%;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.card-content{
+    width: 50%;
+    padding: 40px;
+    position: relative;
+}
+.card-title{
+    font-size: 30px;
+    line-height: 60px;
+}
+.card-title span{
+    font-size: 18px;
+}
+.card-desc{
+    font-size: 23px;
+    color: #717275;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.social-icons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 40px;
+}
+.social-icons p{
+    background-color: #f1c522;
+    padding: 15px;
+    border-radius: 50%;
 }
 
 @media(max-width: 1050px){
